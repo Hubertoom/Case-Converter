@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    display: grid;
+    place-content: center;
+    background-color: black;
+    min-height: 10vh;
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(1rem, 1rem + 8vw, 5rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+}
+
+.wrapper > div {
+    margin-top: 20px;
+    grid-area: 1/1/-1/-1;
+}
+
+.title {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+
+.title_bottom {
+    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+    color: transparent;
+    background: -webkit-linear-gradient(177deg, black 53%, hsl(0, 0%, 100%) 65%);
+    background: linear-gradient(177deg, black 53%, white 65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
+}
+
+textarea {
+    margin-top: 20px;
+    background-color: silver;
+    font-size: 24px;
+    width: 1400px;
+    height: 650px;
+}
+
+button {
+    background-color: slategray;
+    margin: 20px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
